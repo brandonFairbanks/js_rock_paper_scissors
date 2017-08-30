@@ -1,0 +1,9 @@
+select {
+    margin-bottom: 20px;
+}
+
+#user-choice,
+#computer-choice,
+#outcome {
+    padding-bottom: 10px;
+}

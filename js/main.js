@@ -12,13 +12,16 @@ $(document).ready(function() {
                 userChoice = 'scissors';
                 break;
         }
-    alert("You Chose " + userChoice );
+    // alert("You Chose " + userChoice ); 
+    $('#user-choice').html("Your Selection: " + userChoice); 
+
     function randomNumber( range ) {
         return Math.round( Math.random() * range )
     };
 
     var choiceSet = ["Rock", "Paper", "Scissors"];
     var computerChoice = randomNumber( choiceSet.length - 1 );
+
 
     if ( computerChoice === 0 ) {
         computerChoice = "rock";
@@ -29,34 +32,34 @@ $(document).ready(function() {
         computerChoice = "scissors";
     }
 
-    alert( "The computer chose " + computerChoice );
+    $('#computer-choice').html("Computer Selection: " + computerChoice);
 
     var compare = function( choice1,choice2 ) {
         if( choice1 === choice2 ) {
-            alert("Draw!");
+            $('#outcome').html("Outcome: Draw!");
         }
         else if( choice1 === "rock" ) {
             if( choice2 === "scissors" ) {
-                alert("Win!");
+                $('#outcome').html("Outcome: Win!");
             }
             else {
-                alert("Lose!");
+                $('#outcome').html("Outcome: Lose");
             }
         }
         else if( choice1 === "paper" ) {
             if( choice2 === "rock" ) {
-                alert("Win!");
+                $('#outcome').html("Outcome: Win!");
             }
             else {
-                alert("Lose!");
+                $('#outcome').html("Outcome: Lose");
             }
         }
         else if ( choice1 === "scissors" ) {
             if( choice2 === "rock" ) {
-                alert("Lose");
+                $('#outcome').html("Outcome: Lose");
             }
             else {
-                alert("Win!");
+                $('#outcome').html("Outcome: Win!");
             }
         }
     };
