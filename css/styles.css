@@ -1,9 +1,16 @@
-select {
-    margin-bottom: 20px;
-}
-
 #user-choice,
 #computer-choice,
 #outcome {
     padding-bottom: 10px;
+}
+
+.primary-container {
+    text-align: center;
+    margin: 0 auto;
+    width: 960px;
+    max-width: 100%;
+}
+
+select {
+    margin-bottom: 20px;
 }

@@ -12,7 +12,6 @@ $(document).ready(function() {
                 userChoice = 'scissors';
                 break;
         }
-    // alert("You Chose " + userChoice ); 
     $('#user-choice').html("Your Selection: " + userChoice); 
 
     function randomNumber( range ) {
